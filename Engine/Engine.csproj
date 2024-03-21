@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Locations\851ca8423ebf587b1630d80e9f73c5e9.png" />
+    <None Remove="Images\Locations\Cyberdistrict.jpg" />
+    <None Remove="Images\Locations\Highways.jpg" />
+    <None Remove="Images\Locations\Labyrinth.jpg" />
+    <None Remove="Images\Locations\Nexus.jpg" />
+    <None Remove="Images\Locations\Park.jpg" />
+    <None Remove="Images\Locations\Pulse Hub.jpg" />
+    <None Remove="Images\Locations\Utopia.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Locations\Pulse Hub.jpg" />
+    <Resource Include="Images\Locations\Cyberdistrict.jpg" />
+    <Resource Include="Images\Locations\851ca8423ebf587b1630d80e9f73c5e9.png" />
+    <Resource Include="Images\Locations\Highways.jpg" />
+    <Resource Include="Images\Locations\Labyrinth.jpg" />
+    <Resource Include="Images\Locations\Nexus.jpg" />
+    <Resource Include="Images\Locations\Park.jpg" />
+    <Resource Include="Images\Locations\Utopia.jpg" />
+  </ItemGroup>
+
+</Project>
