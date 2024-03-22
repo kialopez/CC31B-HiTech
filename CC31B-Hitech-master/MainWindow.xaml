@@ -1,0 +1,91 @@
+﻿<Window x:Class="CC31B_Hitech.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CC31B_Hitech"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+                      
+            
+            <Label Grid.Row="1" Grid.Column="0" Content="Player Status" Background="LavenderBlush"/>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="Name"/>
+                <Label Grid.Row="0" Grid.Column="1" Content="{Binding Current_Player.Name}"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="Character Class"/>
+                <Label Grid.Row="1" Grid.Column="1" Content="{Binding Current_Player.CharacterClass}"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="Hit Points"/>
+                <Label Grid.Row="2" Grid.Column="1" Content="{Binding Current_Player.HitPoints}"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Experience Points"/>
+                <Label Grid.Row="3" Grid.Column="1" Content="{Binding Current_Player.ExperiencePoints}"/>
+                <Label Grid.Row="4" Grid.Column="0" Content="Level"/>
+                <Label Grid.Row="4" Grid.Column="1" Content="{Binding Current_Player.Level}"/>
+                <Label Grid.Row="5" Grid.Column="0" Content="Gold"/>
+                <Label Grid.Row="5" Grid.Column="1" Content="{Binding Current_Player.Gold}"/>
+            </Grid>
+        </Grid>
+        
+        
+
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Location Information" Background="DeepSkyBlue"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Enemy Information" Background="LavenderBlush"/>
+        </Grid>
+
+        
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" Background="AliceBlue"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Message" Background="LightPink"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Inventory and Quest" Background="LightYellow"/>
+        <Label Grid.Row="3" Grid.Column="1" Content="Item Information and Action" Background="LightYellow"/> 
+        <Label Grid.Row="3" Grid.Column="2" Content="Navigation Buttons" Background="LightYellow"/>
+        
+        
+        
+    </Grid>
+</Window>
